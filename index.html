@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> 노가영의 10월 첫째주 </title>
+        <style>
+            body {
+                background-image: url("./배경.jpg");
+                color: rgb(59, 49, 46);
+                margin-left: 100px;
+                margin-right: 100px;
+                text-align: center;
+                font-family: "그리운";
+            }
+            .diary-box {
+                background-color: white;
+                border: 2px solid rgb(59, 49, 46);
+                border-radius: 20px;
+                padding: 10px;
+                margin: 10px auto;
+                width: 50%;
+            }
+            .date-box {
+                background-color: rgb(59, 49, 46);
+                color: white;
+                border-radius: 30px;
+                padding: 5px;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            @font-face {
+            font-family: "그리운";
+            src: url("그리운.ttf");
+            }
+            title-area {
+                margin-top: 40px;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            .title-label {
+                display: inline-block;
+                background-color: rgb(59, 49, 46);
+                color: white;
+                border-radius: 20px;
+                padding: 5px 15px;
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            .title-area h1 {
+                font-size: 42px;
+                line-height: 1.3;
+                margin: 0;
+            }
+            .title-sub {
+                font-size: 18px;
+                margin-top: 10px;
+                opacity: 0.7;
+            }
+        </style>
+        <script>
+         function toggleDiary(id) {
+         const diary = document.getElementById(id);
+         diary.hidden = !diary.hidden;
+         }
+        </script>
+    </head>
+
+    <body>
+     <div class="title-area">
+        <div class="title-label">
+         2026 OCTOBER · WEEK 1
+        </div>
+        <h1>노가영은<br>10월 첫째 주에 뭘 했을까?</h1>
+     </div><br>
+
+        (누르면 일기가 나와요!)<br><br>
+
+     </div>
+       <div class="diary-box">
+         <div class="date-box" onclick="toggleDiary('diary1')">
+            2026년 10월 1일 | 날씨가 시원하네요
+         </div><br>
+         <div id="diary1" class="diary-content" hidden>
+            <img src="./1-1.jpeg" width="250px"><br>
+            오늘따라 유독 가을 날씨길래 따뜻한 라테를 시켰는데요 <br>
+            라테아트가 있는 줄 모르고 호롭 마셔버렸답니다<br><br>
+            <img src="./1-2.jpeg" width="250px"><br>
+            수업 듣는데 갑자기 동기가 내 마우스 치이카와 닮았다고 했어요<br>
+            (진심 치이카와 뭉쳐서 만든 줄)<br><br>
+            <img src="./1-3.jpeg" width="250px"><br>
+            요즘 배달을 너무 많이 먹는 것 같아서<br>
+            오늘은 기필코 요리해 먹기로 다짐했는데요<br>
+            배달하시는 분들도 먹고 살아야죠.<br><br>
+        </div>
+     </div>
+
+     <div class="diary-box">
+        <div class="date-box" onclick="toggleDiary('diary2')">
+           10월 2일 금요일 | 날씨 덥다가 춥네요...
+         </div><br>
+         <div id="diary2" class="diary-content" hidden>
+            <img src="./2-1.jpeg" width="250px"><br>
+            초딩때 미술학원에서 매일 토마토 김밥을 시켜주셨는데요 <br>
+            저는 참치마요 주먹밥을 가장 좋아했답니다<br>
+            오랜만에 먹으니까 추억들이 록새록새하네요<br>
+            <del>선생님이 너무 무서워서 질문하지 못하고 30분간 서 있었던 추억...</del><br>
+            <del>스케치를 너무 진하게 해서 도화지에 유령 만든다며 맨날 혼났던 추억...</del><br><br>
+            <img src="./2-2.jpeg" width="250px"><br>
+            저는 고양이털 알레르기가 있답니다 <br>
+            하지만 고양이를 위한 츄르가 항상 주머니에 준비되어 있는 여성이죠<br>
+            오늘도 츄르를 짜주고 멀찍이서 지켜만 봅니다<br><br>
+        </div>
+     </div>
+
+     <div class="diary-box">
+        <div class="date-box" onclick="toggleDiary('diary3')">
+           10월 3일 토요일 | 날씨가 쌀쌀합니다
+         </div><br>
+         <div id="diary3" class="diary-content" hidden>
+            <img src="./3-2.jpeg" width="250px"><br>
+            여기는 제 또간집인데요<br>
+            수원역 '천지양꼬치' 추천합니다.<br>
+            무조건 양념 양꼬치 + 꿔바로우 + 계란볶음밥으로 시키세요!<br>
+            <img src="./3-4.jpeg" width="250px"><br>
+            미루고 미루다가 드디어 <오디세이> 보러 왔습니다. <br>
+            이거는 얼음에 빨대가 막힌 아이스 초코라떼입니다.(맛있어요) <br><br>
+        </div>
+     </div>
+
+     <div class="diary-box">
+        <div class="date-box" onclick="toggleDiary('diary4')">
+           10월 4일 일요일 | 낮에는 덥고 저녁에는 춥네요
+         </div><br>
+         <div id="diary4" class="diary-content" hidden>
+            <img src="./4-1.jpeg" width="250px"><br>
+            디자인만 하다가 숫자를 다루려니 어렵더군요(회계 자료 정리 중..)<br>
+            밥도 거르면서 했지만 결국 해내지 못했습니다<br>
+            너무 낡고 지쳐서 제 사랑 르블루 베이컨 포테이토 피자를 먹었습니다.<br>
+            행복해졌습니다<br>
+        </div>
+     </div>
+
+     <script>
+        function toggleDiary(id) {
+        const diary = document.getElementById(id);
+        diary.hidden = !diary.hidden;
+        }
+     </script>
+    </body>
+</html>
